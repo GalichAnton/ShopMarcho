@@ -292,6 +292,7 @@ textarea.input {
 .rating__body::before {
 	content: "★★★★★";
 	display: block;
+	color: #ccccce;
 }
 .rating__active {
 	position: absolute;
@@ -308,7 +309,7 @@ textarea.input {
 	height: 100%;
 	top: 0;
 	left: 0;
-	color: #ffd300;
+	color: #ffc35b;;
 }
 
 .rating__items {
