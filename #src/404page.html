@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('_head.html',{
+	"title":"404"
+	})
+	<body>
+		<div class="wrapper">
+	        <header class="header header_page-404">
+                <div class="header__container _container">
+                    <div class="header__wrapper">
+                        <div class="header__logo">
+                            <img src="img/logo.png" alt="Logo">
+                        </div>
+                        <div class="header__menu menu">
+                            <nav class="menu__body">
+                                <ul class="menu__list">
+                                    <li class="menu__item"><a href="" class="menu__link ">HOME</a></li>
+                                    <li class="menu__item"><a href="" class="menu__link">SHOP</a></li>
+                                    <li class="menu__item"><a href="" class="menu__link">PAGE</a></li>
+                                    <li class="menu__item"><a href="" class="menu__link">BLOG</a></li>
+                                    <li class="menu__item"><a href="" class="menu__link">CONTACT</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="user-nav">
+                            <a href="" class="user-nav__link _icon-user"></a>
+                            <a href="" class="user-nav__link _icon-search"></a>
+                            <a href="" class="user-nav__link _icon-heart">
+                                <div class="user-nav__num">3</div>
+                            </a>
+                            <a href="" class="user-nav__link _icon-cart">
+                                <div class="user-nav__num">7</div>
+                            </a>
+                        </div>
+                        <button type="button" class="menu__icon icon-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+			<main class="page">
+                <section class="page-404">
+                    <div class="page-404__container _container">
+                        <div class="page-404__wrapper">
+                            <div class="page-404__content">
+                                <div class="page-404__title _title">OPPS! Page Not Found!!</div>
+                                <div class="page-404__descr">We,re sorry but we can’t seem to find the pages you request. This might be because you have typed the web address not find incorrectly.</div>
+                                <a href="index.html" class="page-404__button _btn">BACK TO HOME</a>
+                            </div>
+                            <div class="page-404__image"><img src="img/404page.png" alt="404page"></div>
+                        </div>
+                        
+                    </div>
+                </section>
+            
+			</main>
+			@@include('_footer.html',{})
+		</div>
+		@@include('_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>

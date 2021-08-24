@@ -44,7 +44,10 @@
         font-size: 16px;
         line-height: 36px;
         font-weight: 500;
-        color: $grayFont
+        color: $grayFont;
+        &:hover{
+            text-decoration: underline;
+        }
     }
 
     // .footer-top__social

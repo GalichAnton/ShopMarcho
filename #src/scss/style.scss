@@ -89,6 +89,8 @@ body {
 @import "header";
 @import "footer";
 @import "home";
+@import "top";
+@import "login";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
@@ -96,5 +98,65 @@ body {
 	flex: 1 1 auto;
 }
 //===================================================================================================================================
+.page-404 {
+	padding: 120px 0px 120px 0px;
+
+	// .page-404__container
+
+	&__container {
+	}
+
+	// .page-404__wrapper
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;	
+	}
+
+	// .page-404__content
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		max-width: 523px;
+	}
+
+	// .page-404__title
+
+	&__title {
+		margin-bottom: 30px;
+		text-align: left;
+		line-height: 26px;
+	}
+
+	// .page-404__descr
+
+	&__descr {
+		font-family: Quicksand;
+		font-size: 16px;
+		line-height: 26px;
+		font-weight: 500;
+		color: #8d8d8d;
+		margin-bottom: 60px;
+	}
+
+	// .page-404__button
+
+	&__button {
+		width: 180px;
+		height: 50px;
+		display: flex;
+		justify-content:center;align-items: center;
+	}
+
+	// .page-404__image
+
+	&__image {
+	}
+}
+
+
+//========================================================================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
