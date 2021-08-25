@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('_head.html',{
+	"title":"Shop"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{})
+			<main class="page">
+                <section class="top">
+                    <div class="top-container">
+                        
+                            <h2 class="top__title _title">SHOP PAGE</h2>
+                            <div class="breadcrumbs">
+                                <ul class="breadcrumbs__list">
+                                    <li class="breadcrumbs__item">
+                                        <a href="" class="breadcrumbs__link"> <img src="img/home_icon.png" alt="home"> Home</a>
+                                    </li>
+                                    <li class="breadcrumbs__item">
+                                        <a href="" class="breadcrumbs__link">Shop page</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                    </div>
+                </section>
+                <section class="shop">
+                    <div class="shop__container _container">
+                        <div class="shop__wrapper">
+                            <div class="shop__filters filters-shop ">
+                                <div class="filters-shop__search filter-item">
+                                    <div class="filters-shop__searh-title filter-title">SEARCH</div>
+                                    <form action="" class="filters-shop__search-form">
+                                        <input type="text" placeholder="Search your keyword...." class="filters-shop__search-input">
+                                        <button class="filters-shop__search-button _icon-search _btn"></button>
+                                    </form>
+                                </div>
+                                <div class="filters-shop__price filter-item">
+                                    <div class="filters-shop__price-title filter-title">Price Filter</div>
+                                    <div class="filters-shop__price-quantity">
+                                        <div class="quantity__range"></div>
+                                        <div class="quantity__inputs">
+                                            <div class="quantity__inputs-controls">
+                                                <div class="quantity__numbers">
+                                                    <label for="price-start" class="quantity__inputs-label">Price: $0 - $999</label>
+                                                    <div class="quantity__startEnd">
+                                                    <input id="price-start" autocomplete="off" placeholder="0" type="text" name="form[]"  class="quantity__var input">
+                                                    <input id="price-end" autocomplete="off" placeholder="999" type="text" name="form[]"  class="quantity__var input">
+                                                    </div>
+                                                </div>
+                                            <button class="quantity__inputs-button _btn">Fiter</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="filters-shop__price-line">
+                                        <div class="filters-shop__price-price">Price: $0 - $999</div>
+                                        <div class="filters-shop__price-button _btn">Fiter</div>
+                                    </div> -->
+                                </div>
+                                <div class="filters-shop__color filter-item">
+                                    <div class="filters-shop__color-title filter-title">Color Filter</div>
+                                    <form action="#" class="filters-shop__color-form">
+                                        <label  class="filters-shop__color-label">
+                                            <div class="filters-shop__color-text">Blue (15)</div>
+                                            <div class="filters-shop__color-box">
+                                                <input type="checkbox" class="filters-shop__color-input">
+                                                <span class="filters-shop__color-checkbox filters-shop__color-checkbox_blue"></span>
+                                            </div>
+                                        </label>
+                                        <label  class="filters-shop__color-label">
+                                            <span class="filters-shop__color-text">Red (09)</span>
+                                            <div class="filters-shop__color-box">
+                                                <input type="checkbox" class="filters-shop__color-input">
+                                                <span class="filters-shop__color-checkbox filters-shop__color-checkbox_red"></span>
+                                            </div>
+                                        </label>
+                                        <label  class="filters-shop__color-label">
+                                            <span class="filters-shop__color-text">Green (28)</span>
+                                            <div class="filters-shop__color-box">
+                                                <input type="checkbox" class="filters-shop__color-input">
+                                                <span class="filters-shop__color-checkbox filters-shop__color-checkbox_green"></span>
+                                            </div>
+                                        </label>
+                                        <label  class="filters-shop__color-label">
+                                            <span class="filters-shop__color-text">Orange (11)</span>
+                                            <div class="filters-shop__color-box">
+                                                <input type="checkbox" class="filters-shop__color-input">
+                                                <span class="filters-shop__color-checkbox filters-shop__color-checkbox_orange"></span>
+                                            </div>
+                                        </label>
+                                        <label  class="filters-shop__color-label">
+                                            <span class="filters-shop__color-text">Black (05)</span>
+                                            <div class="filters-shop__color-box">
+                                                <input type="checkbox" class="filters-shop__color-input">
+                                                <span class="filters-shop__color-checkbox filters-shop__color-checkbox_black"></span>
+                                            </div>
+                                        </label>
+                                        <label  class="filters-shop__color-label">
+                                            <span class="filters-shop__color-text">Purple (21)</span>
+                                            <div class="filters-shop__color-box">
+                                                <input type="checkbox" class="filters-shop__color-input">
+                                                <span class="filters-shop__color-checkbox filters-shop__color-checkbox_purple"></span>
+                                            </div>
+                                        </label>
+                                    </form>
+                                </div>
+                                <div class="filters-shop__size filter-item">
+                                    <div class="filters-shop__size-title filter-title">Size Filter</div>
+                                    <form action="#" class="filters-shop__size-form">
+                                        <label class="filters-shop__size-label">
+                                            <input type="checkbox" class="filters-shop__size-input">
+                                            <span class="filters-shop__size-checkbox"></span>
+                                            <div class="filters-shop__size-text">X-small</div> 
+                                        </label>
+                                    </form>
+                                    <form action="#" class="filters-shop__size-form">
+                                        <label class="filters-shop__size-label">
+                                            <input type="checkbox" class="filters-shop__size-input">
+                                            <span class="filters-shop__size-checkbox"></span>
+                                            <div class="filters-shop__size-text">Small</div> 
+                                        </label>
+                                    </form>
+                                    <form action="#" class="filters-shop__size-form">
+                                        <label class="filters-shop__size-label">
+                                            <input type="checkbox" class="filters-shop__size-input">
+                                            <span class="filters-shop__size-checkbox"></span>
+                                            <div class="filters-shop__size-text">Medium</div> 
+                                        </label>
+                                    </form>
+                                    <form action="#" class="filters-shop__size-form">
+                                        <label class="filters-shop__size-label">
+                                            <input type="checkbox" class="filters-shop__size-input">
+                                            <span class="filters-shop__size-checkbox"></span>
+                                            <div class="filters-shop__size-text">Large</div> 
+                                        </label>
+                                    </form>
+                                    <form action="#" class="filters-shop__size-form">
+                                        <label class="filters-shop__size-label">
+                                            <input type="checkbox" class="filters-shop__size-input">
+                                            <span class="filters-shop__size-checkbox"></span>
+                                            <div class="filters-shop__size-text">XXL</div> 
+                                        </label>
+                                    </form>
+                                </div>
+                                <div class="filters-shop__category filter-item">
+                                    <div class="filters-shop__category-title filter-title">CATEGORY</div>
+                                    <form action="#" class="filters-shop__category-form">
+                                        <label  class="filters-shop__category-label">
+                                            <input type="checkbox" class="filters-shop__category-input">
+                                            <div class="filters-shop__category-checkbox">
+                                                <span>Woman</span>
+                                                <span>42</span>
+                                            </div>
+                                        </label>
+                                    </form>
+                                    <form action="#" class="filters-shop__category-form">
+                                        <label  class="filters-shop__category-label">
+                                            <input type="checkbox" class="filters-shop__category-input">
+                                            <div class="filters-shop__category-checkbox">
+                                                <span>Man</span>
+                                                <span>30</span>
+                                            </div>
+                                        </label>
+                                    </form>
+                                    <form action="#" class="filters-shop__category-form">
+                                        <label  class="filters-shop__category-label">
+                                            <input type="checkbox" class="filters-shop__category-input">
+                                            <div class="filters-shop__category-checkbox">
+                                                <span>Sale Products</span>
+                                                <span>22</span>
+                                            </div>
+                                        </label>
+                                    </form>
+                                    <form action="#" class="filters-shop__category-form">
+                                        <label  class="filters-shop__category-label">
+                                            <input type="checkbox" class="filters-shop__category-input">
+                                            <div class="filters-shop__category-checkbox">
+                                                <span>Fashion</span>
+                                                <span>121</span>
+                                            </div>
+                                        </label>
+                                    </form>
+                                    <form action="#" class="filters-shop__category-form">
+                                        <label  class="filters-shop__category-label">
+                                            <input type="checkbox" class="filters-shop__category-input">
+                                            <div class="filters-shop__category-checkbox">
+                                                <span>Hot Dresses</span>
+                                                <span>52</span>
+                                            </div>
+                                        </label>
+                                    </form>
+                                    <form action="#" class="filters-shop__category-form">
+                                        <label  class="filters-shop__category-label">
+                                            <input type="checkbox" class="filters-shop__category-input">
+                                            <div class="filters-shop__category-checkbox">
+                                                <span>Accessories</span>
+                                                <span>88</span>
+                                            </div>
+                                        </label>
+                                    </form>
+                                </div>
+                                <div class="filters-shop__tag filter-item">
+                                    <div class="filters-shop__tag-title filter-title">Popular Tags</div>
+                                    <form  class="filters-shop__tag-form">
+                                        <label  class="filters-shop__tag-label">
+                                            <input type="checkbox" class="filters-shop__tag-input">
+                                            <span class="filters-shop__tag-checkbox">Sweetshirt</span>
+                                        </label>
+                                    </form>
+                                    <form  class="filters-shop__tag-form">
+                                        <label  class="filters-shop__tag-label">
+                                            <input type="checkbox" class="filters-shop__tag-input">
+                                            <span class="filters-shop__tag-checkbox">Man Accessories</span>
+                                        </label>
+                                    </form>
+                                    <form  class="filters-shop__tag-form">
+                                        <label  class="filters-shop__tag-label">
+                                            <input type="checkbox" class="filters-shop__tag-input">
+                                            <span class="filters-shop__tag-checkbox">Fashion</span>
+                                        </label>
+                                    </form>
+                                    <form  class="filters-shop__tag-form">
+                                        <label  class="filters-shop__tag-label">
+                                            <input type="checkbox" class="filters-shop__tag-input">
+                                            <span class="filters-shop__tag-checkbox">Polo</span>
+                                        </label>
+                                    </form>
+                                    <form  class="filters-shop__tag-form">
+                                        <label  class="filters-shop__tag-label">
+                                            <input type="checkbox" class="filters-shop__tag-input">
+                                            <span class="filters-shop__tag-checkbox">T-Shirt</span>
+                                        </label>
+                                    </form>
+                                    <form  class="filters-shop__tag-form">
+                                        <label  class="filters-shop__tag-label">
+                                            <input type="checkbox" class="filters-shop__tag-input">
+                                            <span class="filters-shop__tag-checkbox">Jewellery</span>
+                                        </label>
+                                    </form>                                    
+                                </div>
+                            </div>
+                            <div class="shop-content">
+                                <div class="shop-content__filter">
+                                    <div class="shop-content__filter-buttons">
+                                        View
+                                        <button class="shop-content__filter-button button-grid"><img src="img/icons/grid.svg" alt=""></button>
+                                        <button class="shop-content__filter-button button-list"><img src="img/icons/list.svg" alt=""></button>
+                                    </div>
+                                    <div class="shop-content__filter-selects">
+                                        <select class="shop-content__filter-sort">
+                                            <option value="">Sort By Default</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                        </select>
+                                        <select class="shop-content__filter-show">
+                                            <option value="">Show 9</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="shop-content-wrapper">
+                                    <div class="product-item">
+                                        <div class="product-item__img-box">
+                                            <div class="item__image  _ibg"><img src="img/product/productOne.png" alt="Product"></div>
+                                            <div class="product-item__links">
+                                                <a href="#" class="product-item__link _icon-search"></a>
+                                                <span></span>
+                                                <a href="#" class="product-item__link _icon-cart"></a>
+                                                <span></span>
+                                                <a href="#" class="product-item__link _icon-heart"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__wrapper-box">
+                                            <div class="product-item__box">
+                                                <div class="product-item__rating rating">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input type="radio" class="rating__item" value="1" name="rating">
+                                                            <input type="radio" class="rating__item" value="2" name="rating">
+                                                            <input type="radio" class="rating__item" value="3" name="rating">
+                                                            <input type="radio" class="rating__item" value="4" name="rating">
+                                                            <input type="radio" class="rating__item" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">3.5</div>
+                                                </div>
+                                                <div class="product-item__price-box">
+                                                    <div class="price-box__title">White Polo Men’s T-Shirt</div>
+                                                    <div class="price-box__prices">
+                                                        <div class="price-box__new">$34.00</div>
+                                                        <div class="price-box__old">$27.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__content-box">
+                                                    <div class="product-item__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod  utlitoi labore et dolore magna aliqua.</div>
+                                                    <button class="product-item__button _btn">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="product-item__img-box">
+                                            <div class="item__image  _ibg"><img src="img/product/product2.png" alt="Product"></div>
+                                            <div class="product-item__links">
+                                                <a href="#" class="product-item__link _icon-search"></a>
+                                                <span></span>
+                                                <a href="#" class="product-item__link _icon-cart"></a>
+                                                <span></span>
+                                                <a href="#" class="product-item__link _icon-heart"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__wrapper-box">
+                                            <div class="product-item__box">
+                                                <div class="product-item__rating rating">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input type="radio" class="rating__item" value="1" name="rating">
+                                                            <input type="radio" class="rating__item" value="2" name="rating">
+                                                            <input type="radio" class="rating__item" value="3" name="rating">
+                                                            <input type="radio" class="rating__item" value="4" name="rating">
+                                                            <input type="radio" class="rating__item" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">3.5</div>
+                                                </div>
+                                                <div class="product-item__price-box">
+                                                    <div class="price-box__title">White Polo Men’s T-Shirt</div>
+                                                    <div class="price-box__prices">
+                                                        <div class="price-box__new">$34.00</div>
+                                                        <div class="price-box__old">$27.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__content-box">
+                                                    <div class="product-item__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod  utlitoi labore et dolore magna aliqua.</div>
+                                                    <button class="product-item__button _btn">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="product-item__img-box">
+                                            <div class="item__image _ibg"><img src="img/product/product3.png" alt="Product"></div>
+                                            <div class="product-item__links">
+                                                <a href="#" class="product-item__link _icon-search"></a>
+                                                <span></span>
+                                                <a href="#" class="product-item__link _icon-cart"></a>
+                                                <span></span>
+                                                <a href="#" class="product-item__link _icon-heart"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__wrapper-box">
+                                            <div class="product-item__box">
+                                                <div class="product-item__rating rating">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input type="radio" class="rating__item" value="1" name="rating">
+                                                            <input type="radio" class="rating__item" value="2" name="rating">
+                                                            <input type="radio" class="rating__item" value="3" name="rating">
+                                                            <input type="radio" class="rating__item" value="4" name="rating">
+                                                            <input type="radio" class="rating__item" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">3.5</div>
+                                                </div>
+                                                <div class="product-item__price-box">
+                                                    <div class="price-box__title">White Polo Men’s T-Shirt</div>
+                                                    <div class="price-box__prices">
+                                                        <div class="price-box__new">$34.00</div>
+                                                        <div class="price-box__old">$27.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__content-box">
+                                                    <div class="product-item__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod  utlitoi labore et dolore magna aliqua.</div>
+                                                    <button class="product-item__button _btn">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="product-item__img-box">
+                                            <div class="item__image _ibg"><img src="img/product/product4.png" alt="Product"></div>
+                                            <div class="product-item__links">
+                                                <a href="#" class="product-item__link _icon-search"></a>
+                                                <span></span>
+                                                <a href="#" class="product-item__link _icon-cart"></a>
+                                                <span></span>
+                                                <a href="#" class="product-item__link _icon-heart"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__wrapper-box">
+                                            <div class="product-item__box">
+                                                <div class="product-item__rating rating">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input type="radio" class="rating__item" value="1" name="rating">
+                                                            <input type="radio" class="rating__item" value="2" name="rating">
+                                                            <input type="radio" class="rating__item" value="3" name="rating">
+                                                            <input type="radio" class="rating__item" value="4" name="rating">
+                                                            <input type="radio" class="rating__item" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">3.5</div>
+                                                </div>
+                                                <div class="product-item__price-box">
+                                                    <div class="price-box__title">White Polo Men’s T-Shirt</div>
+                                                    <div class="price-box__prices">
+                                                        <div class="price-box__new">$34.00</div>
+                                                        <div class="price-box__old">$27.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__content-box">
+                                                    <div class="product-item__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod  utlitoi labore et dolore magna aliqua.</div>
+                                                    <button class="product-item__button _btn">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="product-item__img-box">
+                                            <div class="item__image _ibg"><img src="img/product/product5.png" alt="Product"></div>
+                                            <div class="product-item__links">
+                                                <a href="#" class="product-item__link _icon-search"></a>
+                                                <span></span>
+                                                <a href="#" class="product-item__link _icon-cart"></a>
+                                                <span></span>
+                                                <a href="#" class="product-item__link _icon-heart"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__wrapper-box">
+                                            <div class="product-item__box">
+                                                <div class="product-item__rating rating">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input type="radio" class="rating__item" value="1" name="rating">
+                                                            <input type="radio" class="rating__item" value="2" name="rating">
+                                                            <input type="radio" class="rating__item" value="3" name="rating">
+                                                            <input type="radio" class="rating__item" value="4" name="rating">
+                                                            <input type="radio" class="rating__item" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">3.5</div>
+                                                </div>
+                                                <div class="product-item__price-box">
+                                                    <div class="price-box__title">White Polo Men’s T-Shirt</div>
+                                                    <div class="price-box__prices">
+                                                        <div class="price-box__new">$34.00</div>
+                                                        <div class="price-box__old">$27.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__content-box">
+                                                    <div class="product-item__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod  utlitoi labore et dolore magna aliqua.</div>
+                                                    <button class="product-item__button _btn">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="product-item__img-box">
+                                            <div class="item__image _ibg"><img src="img/product/product6.png" alt="Product"></div>
+                                            <div class="product-item__links">
+                                                <a href="#" class="product-item__link _icon-search"></a>
+                                                <span></span>
+                                                <a href="#" class="product-item__link _icon-cart"></a>
+                                                <span></span>
+                                                <a href="#" class="product-item__link _icon-heart"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__wrapper-box">
+                                            <div class="product-item__box">
+                                                <div class="product-item__rating rating">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input type="radio" class="rating__item" value="1" name="rating">
+                                                            <input type="radio" class="rating__item" value="2" name="rating">
+                                                            <input type="radio" class="rating__item" value="3" name="rating">
+                                                            <input type="radio" class="rating__item" value="4" name="rating">
+                                                            <input type="radio" class="rating__item" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">3.5</div>
+                                                </div>
+                                                <div class="product-item__price-box">
+                                                    <div class="price-box__title">White Polo Men’s T-Shirt</div>
+                                                    <div class="price-box__prices">
+                                                        <div class="price-box__new">$34.00</div>
+                                                        <div class="price-box__old">$27.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__content-box">
+                                                    <div class="product-item__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod  utlitoi labore et dolore magna aliqua.</div>
+                                                    <button class="product-item__button _btn">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                @@include('_pagging.html',{})
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                </section>
+			</main>
+			@@include('_footer.html',{})
+		</div>
+		@@include('_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>

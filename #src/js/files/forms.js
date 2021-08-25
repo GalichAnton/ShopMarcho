@@ -157,7 +157,7 @@ for (let index = 0; index < viewPass.length; index++) {
 }
 
 //Select
-let selects = document.getElementsByTagName('select');
+/* let selects = document.getElementsByTagName('select');
 if (selects.length > 0) {
 	selects_init();
 }
@@ -344,7 +344,7 @@ function selects_update_all() {
 			select_item(select);
 		}
 	}
-}
+} */
 
 //Placeholers
 let inputs = document.querySelectorAll('input[data-value],textarea[data-value]');
@@ -493,28 +493,28 @@ if (quantityButtons.length > 0) {
 }
 
 //RANGE
-const priceSlider = document.querySelector('.price-filter__slider');
+const priceSlider = document.querySelector('.quantity__range');
 if (priceSlider) {
 
-	let textFrom = priceSlider.getAttribute('data-from');
-	let textTo = priceSlider.getAttribute('data-to');
+	/* let textFrom = priceSlider.getAttribute('data-from');
+	let textTo = priceSlider.getAttribute('data-to'); */
 
 	noUiSlider.create(priceSlider, {
-		start: [0, 200000],
+		start: [200, 800],
 		connect: true,
-		tooltips: [wNumb({ decimals: 0, prefix: textFrom + ' ' }), wNumb({ decimals: 0, prefix: textTo + ' ' })],
+		tooltips: [wNumb({ decimals: 0}), wNumb({ decimals: 0})],
 		range: {
 			'min': [0],
-			'max': [200000]
+			'max': [999]
 		}
 	});
 
-	/*
+	
 	const priceStart = document.getElementById('price-start');
 	const priceEnd = document.getElementById('price-end');
 	priceStart.addEventListener('change', setPriceValues);
 	priceEnd.addEventListener('change', setPriceValues);
-	*/
+	
 
 	function setPriceValues() {
 		let priceStartValue;

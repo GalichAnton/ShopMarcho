@@ -136,7 +136,7 @@
 .noUi-connects {
 }
 .noUi-connect {
-	background-color: #ffcda5;
+	background-color: $redColor;
 }
 /* Handles and cursors;
  */
@@ -147,9 +147,9 @@
 	cursor: ns-resize;
 }
 .noUi-handle {
-	border: 1px solid #f68038;
+	border: 1px solid $redColor;
 	background-color: #ffffff;
-	border-radius: 50%;
+	border-radius: 50%; 
 	cursor: default;
 	&::after {
 		content: "";
@@ -158,8 +158,8 @@
 		position: absolute;
 		left: 3px;
 		top: 3px;
-		border-radius: 50%;
-		background-color: #f68038;
+		border-radius: 50%; 
+		background-color: #fff;
 	}
 }
 .noUi-active {
